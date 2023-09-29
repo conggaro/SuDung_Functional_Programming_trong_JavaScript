@@ -130,4 +130,4 @@ const trungBinhCong = mang5.reduce((tong, item, index, array) => {
 
 str5 = mang5.join(" + ");
 
-console.log(`\nKết quả (${str5}) / ${mang5.length} = ${trungBinhCong}`); // 16
+console.log(`\nKết quả (${str5}) / ${mang5.length} = ${trungBinhCong}`);
