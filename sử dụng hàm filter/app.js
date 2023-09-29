@@ -1,5 +1,5 @@
 // cho 1 mảng
-var Mang = [
+var mang = [
     {id: 1, name: "Nguyễn Văn A", age: 20},
     {id: 2, name: "Nguyễn Văn B", age: 25},
     {id: 3, name: "Nguyễn Văn C", age: 30},
@@ -15,7 +15,7 @@ var Mang = [
 
 // in ra mảng ban đầu
 console.log("Mảng ban đầu:");
-console.log(Mang);
+console.log(mang);
 
 
 /*
@@ -49,7 +49,7 @@ console.log(Mang);
 // tạo biến kết quả sử dụng "value"
 // để hứng dữ liệu lọc các bản ghi
 // có tuổi nằm trong khoảng 40 đến 50 tuổi
-var ketQua_SuDung_value = Mang.filter(function(value, index, array){
+var ketQua_SuDung_value = mang.filter(function(value, index, array){
     return (40 <= value.age) && (value.age <= 60);
 });
 
@@ -64,7 +64,7 @@ console.log(ketQua_SuDung_value);
 // tạo biến kết quả sử dụng "index"
 // để hứng dữ liệu lọc các bản ghi
 // có index == 0 hoặc index == 1
-var ketQua_SuDung_index = Mang.filter(function(value, index, array){
+var ketQua_SuDung_index = mang.filter(function(value, index, array){
     return index == 0 || index == 1;
 });
 
@@ -79,7 +79,7 @@ console.log(ketQua_SuDung_index);
 // tạo biến kết quả sử dụng "array"
 // để hứng dữ liệu lọc các bản ghi
 // có index != 0
-var ketQua_SuDung_array = Mang.filter(function(value, index, array){
+var ketQua_SuDung_array = mang.filter(function(value, index, array){
     // lấy ra 1 phần tử ở cuối mảng
     array.pop();
 
