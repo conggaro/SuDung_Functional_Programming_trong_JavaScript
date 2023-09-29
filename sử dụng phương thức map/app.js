@@ -10,14 +10,14 @@
     
     trên thực tế
     có thể có vô số tình huống
-    ở đó hàm map()
+    ở đó phương thức map()
     sẽ giúp chúng ta xử lý 1 cách dễ dàng
 
     map (danh từ): là bản đồ
 
     map (động từ): là ánh xạ
 
-    => suy ra, hàm map() là hàm ánh xạ
+    => suy ra, phương thức map() là phương thức ánh xạ
 */
 
 
@@ -46,7 +46,7 @@ console.log(danhSach_SanPham);
 
 
 // cho 1 mảng sản phẩm
-// hãy dùng hàm map()
+// hãy dùng phương thức map()
 // để trả về 1 mảng
 // giống hệt mảng ban đầu
 
@@ -62,24 +62,24 @@ var danhSach_SaoChep = danhSach_SanPham.map(
 );
 
 
-// in ra mảng sao chép được trả về bởi hàm map()
-console.log("\nMảng sao chép được trả về bởi hàm map():");
+// in ra mảng sao chép được trả về bởi phương thức map()
+console.log("\nMảng sao chép được trả về bởi phương thức map():");
 console.log(danhSach_SaoChep);
 
 
-// cảm giác sử dụng hàm map()
+// cảm giác sử dụng phương thức map()
 // để tạo ra mảng mới
 // giống mảng ban đầu
 // nếu bạn sử dụng vòng lặp forEach()
 // thì cũng tạo ra mảng mới
 // giống mảng ban đầu được đấy
 // khác nhau chỗ viết code
-// là hàm map() thì không cần dùng push()
+// là phương thức map() thì không cần dùng push()
 // còn dùng forEach() thì bạn phải thêm push()
 
 // ví dụ:
 // dùng forEach() để tạo ra kết quả
-// giống y hệt hàm map()
+// giống y hệt phương thức map()
 var khoi_tao = [];
 
 // gọi phương thức forEach()
@@ -95,11 +95,11 @@ console.log("\nKết quả được tạo ra từ forEach():");
 console.log(khoi_tao);
 
 
-// sử dụng hàm map()
+// sử dụng phương thức map()
 // để trả về mảng chứa danh sách id
 // tạo biến danh sách id
 // để hứng dữ liệu
-// trả về từ hàm map()
+// trả về từ phương thức map()
 var danhSach_Id = danhSach_SanPham.map(
     function(value, index, array){
         return {
@@ -121,7 +121,7 @@ console.log(danhSach_Id);
 
 
 // tạo biến danh sách tên sản phẩm
-// để hứng dữ liệu trả về của hàm map()
+// để hứng dữ liệu trả về của phương thức map()
 var danhSach_TenSanPham = danhSach_SanPham.map(
     function(value, index, array){
         return {
@@ -136,7 +136,7 @@ console.log(danhSach_TenSanPham);
 
 
 // tạo biến danh sách giá sản phẩm
-// để hứng dữ liệu trả về của hàm map()
+// để hứng dữ liệu trả về của phương thức map()
 var danhSach_GiaSanPham = danhSach_SanPham.map(
     // bạn có thể viết ngắn gọn như này
     (value, index, array) => value.price

@@ -19,7 +19,7 @@ console.log(mang);
 
 
 /*
-    hàm filter() nhận các đối số
+    phương thức filter() nhận các đối số
     giống như map() và hoạt động rất giống nhau.
     
     sự khác biệt duy nhất là callback
@@ -32,7 +32,7 @@ console.log(mang);
     thì phần tử đó sẽ được
     lọc ra khỏi mảng ban đầu
 
-    hàm filter() có 3 tham số
+    phương thức filter() có 3 tham số
     tham số thứ nhất là value,
     tham số thứ 2 là index,
     tham số thứ 3 là array
@@ -98,7 +98,7 @@ var ketQua_SuDung_array = mang.filter(function(value, index, array){
         array.push({id: 18, name: "Nguyễn Văn Y", age: 17});
         array.push({id: 20, name: "Nguyễn Văn Z", age: 52});
 
-        vì viết code như này ở trong hàm filter()
+        vì viết code như này ở trong phương thức filter()
         thì nó sẽ thêm n x 3 phần tử
 
         vì dụ cái mảng ban đầu có 10 bản ghi
@@ -109,7 +109,7 @@ var ketQua_SuDung_array = mang.filter(function(value, index, array){
         nếu thành công thì nó thêm tận 10x3=30
         phần tử mới đấy
 
-        do đó, trong hàm filter()
+        do đó, trong phương thức filter()
         chỉ giới hạn pop 1 phần tử
         và push 1 phần tử thôi
     */

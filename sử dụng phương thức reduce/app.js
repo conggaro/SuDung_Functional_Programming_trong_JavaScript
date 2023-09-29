@@ -30,7 +30,7 @@
     3. index (Optional): chỉ số của phần tử
     trong mảng đang được xử lý
 
-    4. array (Optional): mảng hiện tại gọi hàm reduce()
+    4. array (Optional): mảng hiện tại gọi phương thức reduce()
 
 
     ĐẶC BIỆT:
