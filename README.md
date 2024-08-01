@@ -103,3 +103,8 @@
 <pre>let d1 = new Date("2024-01-31 11:30:59");
 
 console.log(d1.toLocaleString());</pre>
+
+# Định dạng số 1 thành '01'
+<pre>    let number = 0;
+    let formattedNumber = number.toString().padStart(2, '0');
+    console.log(formattedNumber); // Output: "01"</pre>
