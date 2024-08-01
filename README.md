@@ -98,3 +98,8 @@
 
         let student1 = new Student("Nguyễn Văn D", 15, 123456);
         console.log(student1);</pre>
+
+# Tạo đối tượng Date
+<pre>let d1 = new Date("2024-01-31 11:30:59");
+
+console.log(d1.toLocaleString());</pre>
