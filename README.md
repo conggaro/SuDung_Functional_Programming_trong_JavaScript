@@ -105,6 +105,6 @@
 console.log(d1.toLocaleString());</pre>
 
 # Định dạng số 1 thành '01'
-<pre>    let number = 0;
+<pre>    let number = 1;
     let formattedNumber = number.toString().padStart(2, '0');
     console.log(formattedNumber); // Output: "01"</pre>
