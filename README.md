@@ -108,3 +108,28 @@ console.log(d1.toLocaleString());</pre>
 <pre>    let number = 1;
     let formattedNumber = number.toString().padStart(2, '0');
     console.log(formattedNumber); // Output: "01"</pre>
+
+# Lấy thời gian hiện tại
+<pre>function getCurrentTimeWithTimezone() {
+    // Lấy thời gian hiện tại
+    const now = new Date();
+
+    // Lấy giờ, phút, giây
+    const hours = now.getHours().toString().padStart(2, '0'); // Đảm bảo có 2 chữ số
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    // Lấy múi giờ
+    const timezoneOffset = -now.getTimezoneOffset(); // Múi giờ tính theo phút
+    const timezoneHours = Math.floor(Math.abs(timezoneOffset) / 60).toString().padStart(2, '0');
+    const timezoneMinutes = (Math.abs(timezoneOffset) % 60).toString().padStart(2, '0');
+    const timezoneSign = timezoneOffset >= 0 ? '+' : '-';
+
+    // Tạo chuỗi kết quả
+    const timeString = `${hours}:${minutes}:${seconds} UTC${timezoneSign}${timezoneHours}:${timezoneMinutes}`;
+    
+    return timeString;
+}
+
+// Sử dụng hàm
+console.log(getCurrentTimeWithTimezone());</pre>
