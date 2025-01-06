@@ -133,3 +133,11 @@ console.log(d1.toLocaleString());</pre>
 
 // Sử dụng hàm
 console.log(getCurrentTimeWithTimezone());</pre>
+
+# Trừ ngày cho đối tượng có kiểu dữ liệu Date
+<pre>const date = new Date(); // Lấy ngày hiện tại
+console.log("Ngày ban đầu:", date);
+
+date.setDate(date.getDate() - 1); // Trừ đi 1 ngày
+console.log("Ngày sau khi trừ:", date);
+</pre>
